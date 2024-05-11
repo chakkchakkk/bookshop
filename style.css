@@ -1,0 +1,120 @@
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    margin: 0%;
+    background-color: #EEE2DF;
+}
+header {
+    height: 80px;
+    background-color:#B36A5E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+button {
+    height: 55%;
+    padding: 10px;
+    background-color: #EED7C5;
+    border: none;
+    border-radius: 5px;
+    color: #B36A5E;
+    font-size: 16pt;
+    font-family: inherit;
+}
+#search {
+    display: none
+}
+i {
+    color: #EED7C5;
+}
+button i {
+    margin-right: 5px;
+    color: #B36A5E;
+}
+:hover button, i {
+    cursor: pointer;
+}
+input {
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16pt;
+    font-family: inherit;
+    flex-grow: 0.5;
+}
+h1 {
+    margin-left: 10vw;
+    margin-bottom: 0%;
+    color: #B36A5E;
+}
+.books {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.book {
+    margin: 1.5vw 1vw;
+}
+img {
+    width: 20vw;
+    height: 30vw;
+    object-fit: contain;
+}
+p {
+    width: 20vw;
+    margin: 0%;
+    color: #70423b;
+}
+.price {
+    font-size: 16pt;
+}
+.name {
+    margin: 5% 0%;
+    font-size: 18pt;
+}
+.author {
+    font-size: 12pt;
+}
+div button {
+    height: 10%;
+    width: 100%; 
+    margin-top: 5%; 
+    background-color: #B36A5E;
+    color: #EED7C5;
+}
+.book i {
+    color: #EED7C5;
+}
+@media screen and (max-width: 900px) {
+    img {
+        width: 30vw;
+        height: 40vw;
+    }
+    p {
+        width: 30vw;
+    }
+}
+@media screen and (max-width: 750px) {
+    img {
+        width: 40vw;
+        height: 50vw;
+    }
+    p {
+        width: 40vw;
+    }
+}
+@media screen and (max-width: 650px) {
+    header {
+        gap: 7%;
+    }
+    #search {
+        display: inline;
+    }
+    input {
+        display: none;
+    }
+}
